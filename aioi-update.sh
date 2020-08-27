@@ -17,7 +17,7 @@ Name=$APPLICATION
 Version=$LATEST_VERSION
 Comment=A companion app for ORCΛ
 Exec=$DIR/Aioi-linux-x64/Aioi
-Icon=$APP_DIR/desktop/icon.ico
+Icon=$APP_DIR/desktop/icon.png
 Categories=UDP;OSC;" > $APPLICATION.desktop
 }
 
