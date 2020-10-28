@@ -7,7 +7,7 @@ LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' $CHECK_URL)
 LATEST_VERSION_TAG=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
 LATEST_VERSION=$(echo "$LATEST_VERSION_TAG" | awk -F- '{print $3}')
 FILE_NAME="$APPLICATION-$LATEST_VERSION"-linux64.tgz
-ARTIFACT_URL=$APP_URL/download/$LATEST_VERSION_TAG/$FILE_NAME
+ARTIFACT_URL=$APP_URL/download/$LATEST_VERSION_TAG/$FILE_NAME    	
 FILE_DIR=~/Documents/Programs/processing
 FILE="$FILE_DIR/$FILE_NAME"
 if [ -f "$FILE" ]; then
