@@ -18,7 +18,7 @@ function init()
 	read prjname
 
 	html="<!DOCTYPE html>
-	<html>
+<html>
 	<head>
 	  <meta charset=\"utf-8\">
 	  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -37,15 +37,15 @@ function init()
 
 	<body>
 	</body>
-	</html>"
+</html>"
 	md="# $prjname"
 	sketch='function setup(){
 		
-	}
+}
 
-	function draw(){
+function draw(){
 		
-	}'
+}'
 
 	if [ -d "$prjname" ]
 	then

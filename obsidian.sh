@@ -1,5 +1,9 @@
 #!/bin/bash
-windows="/run/media/plaiddroid/Windows"
+root="/run/media/plaiddroid"
+windows="$root/Windows"
+if [ ! -d "$root" ]; then
+	sudo mkdir "$root"
+fi
 sudo mkdir "$windows"
 sudo mount -t ntfs /dev/sda3 $windows
 cd /home/plaiddroid/Documents/Programs
