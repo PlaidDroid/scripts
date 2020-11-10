@@ -1,8 +1,15 @@
 #!/bin/sh
-# avtools compr input output
-# avtools stab input output
-# avtools split video-in audio-out video-out
-# avtools join video-in audio-in video-out
+#
+# Audio Video commands for ffmpeg
+# 
+# Usage:
+#  avtools compr input output
+#  avtools stab input output
+#  avtools split video-in audio-out video-out
+#  avtools join video-in audio-in video-out
+#
+# Author: plaiddroid
+#
 
 option="${1}"
 
@@ -22,12 +29,14 @@ case ${option} in
         echo "`ffmpeg -i ${2} -i ${3} -c:v copy -c:a aac ${4}.mp4`"
         ;;
     *)
-        echo "`basename ${0}` 
-  v1.0
-  a script by athulcvinod
+        echo "**********
+`basename ${0}`
+********** 
+  v1.1
+  a script by plaiddroid
         
 Uses:
-`apt-cache policy ffmpeg`
+ffmpeg
 
 Commands:
   avtools compr input output

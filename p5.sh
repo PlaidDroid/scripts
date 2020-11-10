@@ -1,4 +1,10 @@
 #!/bin/bash
+#
+# Project generator for p5.js
+# 
+# Author: plaiddroid
+#
+
 HOME=~/Documents/Programs/processing
 P5_HOME=$HOME/p5
 if [ ! -d "$P5_HOME" ]
