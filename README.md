@@ -16,4 +16,4 @@
 - [processing-update](processing-update.sh) : installs and updates [*processing*](https://github.com/processing/processing) for linux
 - [juce-update](juce-update.sh) : installs and updates [*juce*](https://github.com/juce-framework/JUCE)
 
-[ you'll need to edit scripts according to your needs. few still have local user and directory names. will be updating soon ]
+>*[you'll need to edit scripts according to your needs. few still have local user and directory names. will be updating soon]*

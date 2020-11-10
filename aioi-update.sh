@@ -2,8 +2,6 @@
 ACCOUNT=MAKIO135
 APPLICATION=aioi
 APP_URL=https://github.com/$ACCOUNT/$APPLICATION
-LATEST_RELEASE=$(curl -L -s -H 'Accept: application/json' $APP_URL/releases/latest)
-LATEST_VERSION=$(echo $LATEST_RELEASE | sed -e 's/.*"tag_name":"\([^"]*\)".*/\1/')
 ROOT=~/Documents/Programs
 DIR=$ROOT/$APPLICATION
 APP_DIR=$DIR/$APPLICATION
@@ -53,4 +51,3 @@ else
 	cd "$DIR"
 	clone
 fi
-
