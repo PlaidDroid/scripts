@@ -14,8 +14,8 @@ then
 	mkdir "$HOME/p5"
 	cd "$P5_HOME"
 	echo "Downloading p5js"
-	wget "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
-	wget "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"
+	wget "https://unpkg.com/p5"
+	wget "https://unpkg.com/p5/lib/addons/p5.sound.min.js"
 fi	
 	
 function init()
@@ -89,7 +89,7 @@ case ${option} in
 	*)
 		echo "*** ** * ** ***
 `basename ${0}`
-  v1.0
+  v1.1
   a script by plaiddroid
 Uses:
   server.py
